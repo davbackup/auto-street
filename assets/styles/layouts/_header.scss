@@ -60,9 +60,10 @@
 
             h1 {
                 font-family: $font1;
-                font-size: 2.5rem;
+                color: $black1;
+                font-size: 2.7rem;
+                text-shadow: 1px 1px $grey2;
             }
-
             .avis-container {
                 display: flex;
                 flex-direction: column;

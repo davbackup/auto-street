@@ -129,7 +129,9 @@ body::before {
 }
 .header .navbar .navbar-container h1 {
   font-family: "Poppins", serif;
-  font-size: 2.5rem;
+  color: #21201e;
+  font-size: 2.7rem;
+  text-shadow: 1px 1px #DEDEDE;
 }
 .header .navbar .navbar-container .avis-container {
   display: flex;
@@ -208,6 +210,7 @@ body::before {
   color: #eee;
   font-family: "montserrat", serif;
   font-size: 2.7rem;
+  text-shadow: 2px 1px #21201e;
 }
 .section1 .metier-content h3:nth-child(2) {
   text-align: center;
@@ -216,6 +219,7 @@ body::before {
   font-size: 1.8rem;
   font-weight: 100;
   margin: 5px 0 60px;
+  text-shadow: 2px 1px #21201e;
 }
 .section1 .metier-content .metier-grid {
   display: grid;
@@ -268,6 +272,7 @@ body::before {
 }
 .section1 .metier-content .metier-grid .event-3 h3:last-of-type {
   transform: translateY(-10px);
+  text-shadow: 1px 1px #eee;
 }
 .section1 .metier-content .metier-grid .event-3 .card-img {
   background: url(../img/carosserie-1.jpg) center/cover;
@@ -293,6 +298,7 @@ body::before {
   color: #21201e;
   font-size: 2rem;
   font-family: "Poppins", serif;
+  text-shadow: 1px 1px #DEDEDE;
 }
 .section1 .metier-content .metier-grid .card-text p {
   font-family: "Poppins", serif;
@@ -316,6 +322,56 @@ body::before {
   margin: 0 auto 15px;
 }
 .section1 .metier-content .metier-grid .card-text a:hover {
+  border: 1px solid rgb(35, 147, 174);
+  color: rgb(35, 147, 174);
+  font-weight: lighter;
+  transform: scale(1.03);
+}
+
+.section2 .bg-img {
+  background: url(../img/bg.jpg) center/cover;
+  display: block;
+  height: 100vh;
+  padding: 100px;
+  box-shadow: 0 0 11px -4px #eee;
+}
+.section2 .bg-img .bg-text {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.section2 .bg-img .bg-text h3 {
+  color: #eee;
+  letter-spacing: 1px;
+  font-family: "Poppins", serif;
+  font-size: 4rem;
+  margin-bottom: 70px;
+  font-weight: bold;
+  text-shadow: 2px 1px rgb(182, 182, 182);
+}
+.section2 .bg-img .bg-text p {
+  font-family: "montserrat", serif;
+  font-weight: 100;
+  max-width: 600px;
+  font-size: 1.3rem;
+  line-height: 27px;
+  margin-bottom: 25px;
+  color: #eee;
+}
+.section2 .bg-img .bg-text a {
+  text-decoration: none;
+  font-family: "montserrat", serif;
+  padding: 10px 30px;
+  border: 1px solid rgb(182, 182, 182);
+  border-radius: 30px;
+  font-size: 1.1rem;
+  color: #eee;
+  background: transparent;
+  transition: 0.2s;
+  margin-top: 30px;
+}
+.section2 .bg-img .bg-text a:hover {
   border: 1px solid rgb(35, 147, 174);
   color: rgb(35, 147, 174);
   font-weight: lighter;
