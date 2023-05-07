@@ -1,0 +1,146 @@
+.section1 {
+
+    .metier-content {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 80px 10px;
+
+        h2 {
+            text-align: center;
+            color: $white;
+            font-family: $font2;
+            font-size: 2.7rem;
+        }
+
+        h3:nth-child(2) {
+            text-align: center;
+            color: $white;
+            font-family: $font1;
+            font-size: 1.8rem;
+            font-weight: 100;
+            margin: 5px 0 60px;
+        }
+
+        .metier-grid {
+            
+            display: grid;
+            grid-template-columns: 60% 40%;
+            grid-template-rows: repeat(2 1fr);
+            row-gap: 25px;
+            grid-template-areas:
+                "a c"
+                "b c";
+
+            @media screen and (max-width: 1100px) {
+                display: block;
+                max-width: 900px;
+                margin: 0 auto;
+            }
+
+            .event-1 {
+                grid-area: a;
+                border-radius: 15px;
+                overflow: hidden;
+                box-shadow: 0 0 11px -4px $white;
+
+                .card-img {
+                    background: url(../img/moteur-1.jpg) center/cover;
+                }
+
+            }
+
+            .event-2 {
+                grid-area: b;
+                border-radius: 15px;
+                overflow: hidden;
+                box-shadow: 0 0 11px -4px $white;
+
+                .card-img {
+                    background: url(../img/pneus-3.jpg) center/cover;
+                }
+
+                @media screen and (max-width: 1100px) {
+                    margin: 30px 0;
+                }
+            }
+
+            .event-3 {
+                grid-area: c;
+                display: grid;
+                grid-template-rows: 88% 12%;
+                margin-left: 25px;
+                overflow: hidden;
+                border-radius: 15px;
+                box-shadow: 0 0 11px -4px $white;
+
+                .card-text {
+                    background: $grey2;
+                }
+                h3:last-of-type {
+                    transform: translateY(-10px);
+                }
+
+                .card-img {
+                    background: url(../img/carosserie-1.jpg) center/cover;
+                }
+
+                @media screen and (max-width: 1100px) {
+                    margin-left: 0;
+                    min-height: 500px;
+                    width: 75%;
+                    margin: 0 auto;
+                }
+            }
+
+            .event-left {
+                display: grid;
+                grid-template-columns: 35% 65%;
+            }
+
+            .card-text {
+                background: $white;
+                text-align: center;
+                padding: 15px 0;
+                
+
+                h3 {
+                    color: $black1;
+                    font-size: 2rem;
+                    font-family: $font1;
+                }
+
+                p {
+                    font-family: $font1;
+                    max-width: 85%;
+                    margin: 20px auto 30px;
+                    font-size: 1rem;
+                    color: $grey;
+
+                }
+
+                a {
+                    text-decoration: none;
+                    font-family: $font2;
+                    padding: 9px 25px;
+                    border: 1px solid $grey;
+                    border-radius: 30px;
+                    font-size: 1.1rem;
+                    color: $black1;
+                    background: transparent;
+                    transition: 0.2s;
+                    display: block;
+                    max-width: 250px;
+                    margin: 0 auto 15px;
+
+                    &:hover {
+                        border: 1px solid $color2;
+                        color: $color2;
+                        font-weight: lighter;
+                        transform: scale(1.03);
+
+                    }
+                }
+            }
+        }
+    }
+}

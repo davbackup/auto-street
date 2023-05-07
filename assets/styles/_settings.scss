@@ -1,0 +1,51 @@
+@font-face {
+    font-family: "Poppins";
+    src: url(../fonts/Poppins-Medium.ttf);
+}
+@font-face {
+    font-family: "montserrat";
+    src: url(../fonts/Montserrat-Medium.ttf);
+}
+
+$font1: "Poppins", serif;
+$font2: "montserrat", serif;
+$white: #eee;
+$black1: #21201e;
+$black2: black;
+$grey: rgb(182, 182, 182);
+$grey2: #DEDEDE;
+$color1: rgb(166, 114, 69);
+$color2: rgb(35,147,174);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: url(../img/ban-bg2.jpg) fixed center/cover ;
+    max-width: 100%;
+    margin: 0 auto;
+
+    
+    &::before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: $black1;
+        top: 0;
+        left: 0;
+        animation: animbefore 1.5s ease forwards;
+        animation-delay: 0.15s;
+
+        @keyframes animbefore {
+            to {
+                opacity: 0;
+            }
+        }
+    }
+    
+}
